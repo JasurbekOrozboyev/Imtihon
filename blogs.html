@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+</head>
+<body>
+<div class="flex">
+<div id="leftDiv" class="w-[20%] h-full h-screen bg-[#F2EAE1] pt-[18px] pl-[25px] flex flex-col justify-between">
+<div>
+    <h2 class="text-[24px] font-bold mb-4 border-l-[8px] border-l-[#F8D442]">Admin students</h2>
+    <div>
+        <center>
+            <img src="https://i.pravatar.cc/150?" alt="img" class="w-[150px] rounded-t-[100%] rounded-b-[100%]  ">
+        </center>
+        <h2 class="w-full font-bold text-[18px] text-center mt-[10px]">O'rozboyev Jasurbek</h2>
+        <p class="w-full text-center text-[20px] text-[#F8D442] mt-[8px]">Admin</p>
+        <center>
+        <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center hover:text-white"><i class="fa-solid fa-graduation-cap"></i>Students</button>
+    </center>
+    </div>
+</div>
+<div>
+    <center>
+        <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center mb-[50px] flex items-center hover:text-white" id="logout">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+    </center>
+</div>
+</div>
+<div class="w-full">
+<div class="w-full bg-[#F2EAE1] flex"> 
+    <button id="toggleBtn" class="w-[3%] p-1 text-[24px] hover:text-[#FEAF00]">
+        <i class="fa-solid fa-right-to-bracket"></i>
+    </button> 
+    <div class="flex w-[97%] items-center justify-between ">
+        <input type="text" id="searchInput" placeholder="Qidirish..." class="w-[90%] border rounded m-5 p-2">
+        <i class="fa-solid fa-bell text-[24px] p-8 text-[#FEAF00]"></i>
+    </div> 
+</div>
+<div class="w-full p-8 bg-white rounded-lg text-center">
+    <h2 class="text-2xl font-bold mb-4">Profil Ma'lumotlari</h2>
+
+
+<div id="hidden" class="mb-4 flex flex-col md:flex-row items-center gap-2">
+<input type="text" id="newFullname" placeholder="Ism" class="border p-2 rounded w-full md:w-1/4">
+<input type="text" id="newPhone" placeholder="Telefon" class="border p-2 rounded w-full md:w-1/4">
+<input type="number" id="newAge" placeholder="Yosh" class="border p-2 rounded w-full md:w-1/4">
+<input type="email" id="newEmail" placeholder="Email" class="border p-2 rounded w-full md:w-1/4">
+<button id="addUser" class="px-4 py-2 bg-[#FEAF00] hover:text-white font-bold rounded ">Qo'shish</button>
+</div>
+
+<table class="w-full border-collapse border">
+    <tr>
+        <th class="border p-2">Rasm</th>
+        <th class="border p-2">Ism</th>
+        <th class="border p-2">Telefon</th>
+        <th class="border p-2">Yosh</th>
+        <th class="border p-2">Email</th>
+        <th class="border p-2">Amallar</th>
+    </tr>
+    <tr >
+        <td class="border p-2 flex items-center justify-center">
+            <img id="profileImage" class="w-16 h-16 rounded-full" src="https://i.pravatar.cc/150?" alt="Profile Image">
+        </td>
+        <td class="border p-2" id="fullname"></td>
+        <td class="border p-2" id="phone"></td>
+        <td class="border p-2" id="age"></td>
+        <td class="border p-2" id="email"></td>
+        <td class="border p-2">
+            <button id="edit" class="px-2 py-1 border rounded hover:bg-[#FEAF00] hover:text-white">Tahrirlash</button>
+            <button id="deletebtn" class="px-2 py-1 border rounded hover:bg-[#FEAF00] hover:text-white">O'chirish</button>
+            <button id="profileRow" class="px-2 py-1 border rounded hover:bg-[#FEAF00] hover:text-white">Batafsil</button>
+        </td>
+    </tr>
+        <tbody id="userTable">
+        
+        </tbody>
+</table>
+
+</div>
+<div>
+    <div id="editModal" class="hidden fixed inset-0 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-[700px]">
+            <h2 class="text-lg font-bold mb-4">Profilni Tahrirlash</h2>
+            <input type="text" id="editFullname" class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Ism">
+            <input type="text" id="editPhone" class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Telefon">
+            <input type="number" id="editAge" class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Yosh">
+            <input type="email" id="editEmail" class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Email">
+            <div class="flex justify-end gap-2">
+                <button id="saveEdit" class="px-3 py-1 border hover:bg-[#FEAF00] hover:text-white rounded">Saqlash</button>
+                <button id="closeModal" class="px-3 py-1 border hover:bg-[#FEAF00] hover:text-white rounded">Bekor qilish</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="./JS/blogs.js"></script>
+</body>
+</html>

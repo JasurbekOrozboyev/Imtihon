@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="flex">
+<div id="leftDiv" class="w-[20%] h-full h-screen bg-[#F2EAE1] pt-[18px] pl-[25px] flex flex-col justify-between">
+    <div>
+        <h2 class="text-[24px] font-bold mb-4 border-l-[8px] border-l-[#F8D442]">Admin students</h2>
+        <div>
+            <center>
+                <img src="https://i.pravatar.cc/150?" class="w-[150px] rounded-t-[100%] rounded-b-[100%] mx-auto">
+            </center>
+            <h2 id="nameFull" class="w-full font-bold text-[18px] text-center mt-[10px]"></h2>
+            <p class="w-full text-center text-[20px] text-[#F8D442] mt-[8px]">Admin</p>
+            <center>
+            <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center hover:text-white"><i class="fa-solid fa-graduation-cap"></i>Students</button>
+        </center>
+        </div>
+    </div>
+    <div>
+        <center>
+            <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center mb-[50px] flex items-center hover:text-white" id="logout">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+        </center>
+    </div>
+</div>
+<button id="toggleBtn" class="w-[3%] p-1 text-[24px] hover:text-[#FEAF00]">
+    <i class="fa-solid fa-right-to-bracket"></i>
+</button> 
+<div class="mt-[100px] ml-[50px]">
+
+<div class="bg-white p-6 border border-black rounded">
+    <h2 class="text-2xl font-bold mb-4 text-center">Student info</h2>
+    
+    <div class="flex items-center p-6 bg-white rounded-lg w-[500px]">
+        <img class=" rounded-lg object-cover" src="https://i.pravatar.cc/150?" alt="Profile Image">
+        <div id="userDetails" class="ml-6">
+        </div>
+    </div>
+    <center>
+        <button id="back" class="mt-4 px-10 py-2 bg-[#FEAF00] hover:text-white rounded">Back</button>
+    </center>
+</div>
+</div>
+</div>
+
+
+<script src="./JS/details.js"></script>
+
+</body>
+</html>

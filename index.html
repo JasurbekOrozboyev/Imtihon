@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Bosh sahifa</title>
+</head>
+<body class="bg-gradient-to-br from-[#FEAF00] to-[#F8D442] flex items-center justify-center min-h-screen">
+    <div id="auth-container" class="w-[475px] p-8 bg-white shadow-lg rounded-lg text-center">
+        <h2 id="form-title" class="text-[32px] font-bold mb-4 border-l-[8px] border-l-[#F8D442]">Admin Students</h2>
+        <h3 class="font-bold text-[22px] mt-35]">SIGN UP</h3>
+        <p class="text-[#6C6C6C] mt-[9px] mb-[10px]">Enter your credentials to access your account</p>
+        <form id="auth-form" class="space-y-4">
+            <input id="fullname" type="text" placeholder="Full name" class="w-full p-2 border rounded" required>
+            <input id="phone" type="tel" placeholder="Phone number" class="w-full p-2 border rounded" required>
+            <input id="age" type="number" placeholder="Age" class="w-full p-2 border rounded" required>
+            <input id="email" type="email" placeholder="Email" class="w-full p-2 border rounded" required>
+            <input id="password" type="password" placeholder="Password" class="w-full p-2 border rounded" required>
+            <button type="submit" class="w-full bg-[#F8D442] hover:text-white p-2 rounded text-[18px]">Sign Up</button>
+        </form>
+        <p class="mt-4">
+            <a href="#" id="toggle-form" class="w-full p-2 rounded text-[#FEAF00]">Sign In</a>
+        </p>
+    </div>
+
+
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>

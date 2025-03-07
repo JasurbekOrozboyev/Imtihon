@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Profil</title>
+</head>
+<body>
+<div class="flex">
+
+<div id="leftDiv" class="w-[20%] h-full h-screen bg-[#F2EAE1] pt-[18px] pl-[25px] flex flex-col justify-between relative">
+    
+    <div>
+        <h2 class="text-[24px] font-bold mb-4 border-l-[8px] border-l-[#F8D442]">Admin students</h2>
+        <div>
+            <center>
+                <img src="https://i.pravatar.cc/150?" alt="men" class="w-[150px] rounded-t-[100%] rounded-b-[100%]  ">
+            </center>
+            <h2 class="w-full font-bold text-[18px] text-center mt-[10px]">O'rozboyev Jasurbek</h2>
+            <p class="w-full text-center text-[16px] text-[#F8D442] mt-[8px]">Admin</p>
+            <center>
+            <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center hover:text-white"><i class="fa-solid fa-graduation-cap"></i>Students</button>
+        </center>
+        </div>
+    </div>
+    <div>
+        <center>
+            <button class="w-[193px] h-[41px] gap-[10px] text-[18px] rounded bg-[#FEAF00] flex items-center mt-[45px] justify-center mb-[50px] flex items-center hover:text-white" id="logout">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+        </center>
+        
+    </div>
+    
+</div>
+<div class="w-[5%]">
+    <button id="toggleBtn" class=" mt-[10px] ml-[10px] p-1 text-[24px] hover:text-[#FEAF00]">
+        <i class="fa-solid fa-right-to-bracket"></i>
+    </button>
+</div>
+
+<div class="w-[592px] h-[391px]  p-8 bg-white rounded-lg">
+    
+    <div class="flex gap-[50px] mt-[100px] p-6 border rounded">
+        <div>
+        <img id="profileImage" class="w-[209px] h-[216px] mb-4 border" src="https://i.pravatar.cc/150?" alt="Profile Image">
+
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold" id="fullname"></h2>
+            <p class="text-lg text-gray-600" id="email"></p>
+            <p class="text-lg text-gray-600" id="phone"></p>
+            <p class="text-lg text-gray-600" id="age"></p>
+            <button id="back" class="mt-4 px-10 py-2 bg-[#FEAF00] hover:text-white rounded">Back</button>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+<script src="./JS/profile.js"></script>
+</body>
+</html>
