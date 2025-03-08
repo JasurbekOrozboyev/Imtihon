@@ -94,7 +94,7 @@ document.getElementById("addUser").addEventListener("click", function () {
     const email = document.getElementById("newEmail").value.trim();
 
     if (!fullname || !phone || !age || !email) {
-        alert("Maydonlarni to'ldiring!");
+        alert("Mallumotlarni kiriting!");
         return;
     }
 
