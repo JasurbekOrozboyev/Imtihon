@@ -6,7 +6,7 @@ let isSignUp = true;
 toggleForm.addEventListener("click", function() {
     isSignUp = !isSignUp;
     if (isSignUp) {
-        formTitle.textContent = "Sign Up sal";
+        formTitle.textContent = "Sign Up";
         toggleForm.textContent = "Kirish";
         document.getElementById("fullname").style.display = "block";
         document.getElementById("phone").style.display = "block";
